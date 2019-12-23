@@ -1,0 +1,54 @@
+.Feature {
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+
+  .Feature-block {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: transparent;
+    transition: color 1s ease;
+    border-radius: 20px;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &.left {
+      background: #fff;
+      background-image: url(../images/split.png);
+      transition: background 0.5s ease;
+      background-size: cover;
+
+      &:hover {
+        background: #121212;
+      }
+    }
+
+    &.right {
+      background: white;
+      background-image: url(../images/split2.png);
+      transition: background 0.5s ease;
+      background-size: cover;
+
+      &:hover {
+        background: #121212;
+      }
+    }
+
+    .Feature-link {
+      font-size: 43px;
+      line-height: 46px;
+      text-transform: uppercase;
+      margin: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%);
+    }
+  }
+}

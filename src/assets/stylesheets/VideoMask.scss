@@ -1,0 +1,127 @@
+.VideoMask {
+  .maskDiamond {
+    div {
+      iframe {
+        -webkit-mask-box-image: image-url("../images/maskDiamond.svg");
+        mask-box-image: image-url("../images/maskDiamond.svg");
+      }
+    }
+  }
+
+  .maskEllipse {
+    div {
+      iframe {
+        -webkit-mask-box-image: image-url("../images/maskEllipse.svg");
+      }
+    }
+  }
+
+  .maskStar {
+    div {
+      iframe {
+        -webkit-mask-box-image: image-url("../images/maskStar.svg");
+      }
+    }
+  }
+
+  .maskStar2 {
+    div {
+      iframe {
+        -webkit-mask-box-image: image-url("../images/maskStar2.svg");
+      }
+    }
+  }
+
+  .maskPolygon {
+    div {
+      iframe {
+        -webkit-mask-box-image: image-url("../images/maskPolygon.svg");
+      }
+    }
+  }
+
+  .maskHeart {
+    div {
+      iframe {
+        -webkit-mask-box-image: image-url("../images/maskHeart.svg");
+      }
+    }
+  }
+
+  .ButtonSet {
+    position: absolute;
+    width: 144px;
+    height: 204px;
+    left: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+
+    .content {
+      padding: 20px 30px;
+
+      h3 {
+        width: 84px;
+        margin-bottom: 14px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        text-align: center;
+      }
+
+      .buttons {
+        width: 84px;
+        height: 136px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .Button {
+          width: 36px;
+          height: 36px;
+          opacity: 0.25;
+          transition: opacity 0.3s ease;
+          background-size: cover;
+
+          &:nth-child(odd) {
+            margin-right: 12px;
+          }
+
+          &:hover {
+            cursor: pointer;
+            opacity: 1;
+          }
+
+          &.on {
+            opacity: 1;
+          }
+
+          &.maskDiamond {
+            background-image: url("../images/maskDiamondPreview.svg");
+          }
+
+          &.maskEllipse {
+            background-image: url("../images/maskEllipsePreview.svg");
+          }
+
+          &.maskStar {
+            background-image: url("../images/maskStarPreview.svg");
+          }
+
+          &.maskStar2 {
+            background-image: url("../images/maskStar2Preview.svg");
+          }
+
+          &.maskPolygon {
+            background-image: url("../images/maskPolygonPreview.svg");
+          }
+
+          &.maskHeart {
+            background-image: url("../images/maskHeartPreview.svg");
+          }
+        }
+      }
+    }
+  }
+}

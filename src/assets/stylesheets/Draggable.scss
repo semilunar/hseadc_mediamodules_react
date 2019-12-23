@@ -1,0 +1,22 @@
+.draggable {
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  z-index: 99;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.75;
+    cursor: move;
+  }
+
+  &.react-draggable-dragging {
+    cursor: progress;
+  }
+
+  &.react-draggable-dragged {
+  }
+}
